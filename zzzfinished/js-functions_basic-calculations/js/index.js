@@ -15,19 +15,19 @@ function add(a, b) {
 }
 
 function subtract(a, b) {
-  // Implement the subtraction logic here
+  return a - b;
 }
 
 function multiply(a, b) {
-  // Implement the multiplication logic here
+  return a * b;
 }
 
 function divide(a, b) {
-  // Implement the division logic here
+  return a / b;
 }
 
 function remainder(a, b) {
-  // Implement the remainder (modulo) logic here
+  return a % b;
 }
 
 /*
