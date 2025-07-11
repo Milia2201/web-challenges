@@ -32,3 +32,31 @@ const habitats = ["Mountains", "Ocean", "Forest", "Domestic Animal"];
 export default function App() {
   return <h1>Animal Filter</h1>;
 }
+
+/* 1. **Set Up State for Habitat**
+
+- Create a `useState` variable to store the selected habitat.
+- Initialize it with an empty string ("").
+
+2. **Render Habitat Buttons**
+- Use `.map()` on the `habitats` array to generate a button for each habitat.
+- Each button should:
+    - Have a key prop.
+    - Include a `className` of `button` for styling. (This class is already defined)
+    - Use an `onClick` event to set the selected habitat in state when clicked.
+
+3. **Filter the Animals**
+- Inside your `App` component, create a new variable that stores the animals to display.
+- Use `.filter()` to include only those animals where the habitat matches the selected habitat in state.
+
+4. **Display the Animals**
+- Use `.map()` to render a list of the filtered animals in your JSX.
+- Each animal should be a list item that display its `name` and `emoji`.
+> The elements ul and li already have some basic styling.
+
+## Bonus: Highlight the Selected Button
+
+- Update the button's `className` to visually indicate when it's selected.
+- Set the button's background color to `"lightblue"` if its habitat matches the selected habitat in state.
+
+- Hint: You can make use of a ternary operator. */

@@ -1,13 +1,14 @@
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
-  let code = "?";
+  const [code, setCode] = useState("");
 
   const validCode = "🐡🐠🐋";
 
   function handleClick(emoji) {
+    setCode(code + emoji);
     console.log(emoji);
-    console.log(code);
   }
 
   return (
@@ -49,6 +50,7 @@ export default function App() {
         type="button"
         onClick={() => {
           console.log("Reset Code!");
+          setCode("");
         }}
       >
         Reset
@@ -58,3 +60,4 @@ export default function App() {
     </div>
   );
 }
+
