@@ -14,9 +14,3 @@ export const server = createServer((request, response) => {
   response.end(responseString);
   return;
 });
-
-/* -
-
-
-- Make the server respond with the string. Reload your browser on the port you've created 
-several times to check that it works. */
